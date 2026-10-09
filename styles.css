@@ -54,7 +54,7 @@
 .site-case-showcase .site-browser-screen .sitemax-real-project-image{display:block!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center center!important;transform:none!important}
 
 /* Ensure website screenshot always fills selected-work card */
-.work-card .site-card-visual{position:relative;display:block;min-height:240px;overflow:hidden;background:#dcece7 url("assets/Sitemax-website-sample.png") center center/cover no-repeat}
+.work-card .site-card-visual{position:relative;display:block;min-height:240px;overflow:hidden;background:#dcece7 url("assets/Sitemax-website-sample.webp") center center/cover no-repeat}
 .work-card .site-card-visual>.sitemax-real-card-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center;display:block;visibility:visible;opacity:1;z-index:1}
 
 /* Enterprise portal mockups: separate UI design, faithful to the original low-density mockup */
