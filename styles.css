@@ -48,3 +48,7 @@
 /* Website redevelopment case study: show the full screenshot, including navigation and bottom CTA */
 .site-case-showcase .site-browser-screen:has(.sitemax-real-project-image){height:auto;min-height:0;padding:0 0 18px;background:#fff;overflow:visible}
 .site-case-showcase .sitemax-real-project-image{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center top;max-height:none}
+
+/* Website case study: generous, uncropped screenshot presentation */
+.site-case-showcase .site-browser-screen{display:block!important;height:auto!important;max-height:none!important;min-height:0!important;overflow:visible!important;background:#f7f9f7!important;padding:28px 0 36px!important}
+.site-case-showcase .site-browser-screen .sitemax-real-project-image{display:block!important;width:100%!important;height:auto!important;max-height:none!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center center!important;transform:none!important}
