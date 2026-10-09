@@ -13,3 +13,15 @@
 
 /* Website case-study preview matches its project hero */
 .site-card-visual{padding:27px;background:#dcece7}.site-card-browser{width:92%;height:100%;background:white;border-radius:9px;overflow:hidden;box-shadow:0 20px 45px #214c3d26;display:flex;flex-direction:column}.site-card-top{min-height:47px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 17px;color:#243e39}.site-card-top span{font-family:Manrope,Arial,sans-serif;font-weight:800;letter-spacing:-.06em;font-size:16px}.site-card-top small{font-size:7px;font-weight:700;letter-spacing:.04em}.site-card-image{flex:1;display:flex;align-items:center;background:linear-gradient(90deg,#102723df 0%,#102723a3 55%,#10272315 100%),url('https://sitemax.com.au/api/media/file/CharterHall-Hoarding-Eagle-Street-1024x576.png') center/cover no-repeat}.site-card-copy{padding:18px 23px;color:white}.site-card-copy small{display:block;font-size:8px;letter-spacing:.12em;font-weight:800;color:#d0e6de}.site-card-copy strong{display:block;font-family:Manrope,Arial,sans-serif;font-size:clamp(16px,2vw,25px);line-height:1.2;letter-spacing:-.04em;margin-top:9px}@media(max-width:540px){.site-card-visual{padding:18px}.site-card-top small{font-size:6px}}
+
+/* Tilted browser treatment inspired by original website card */
+.site-card-visual{padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#dcece7}
+.site-card-browser{width:78%;height:83%;transform:rotate(-4deg);transform-origin:center;box-shadow:0 28px 60px rgba(24,54,51,.19);border:1px solid #c5d9d2;border-radius:10px;flex-shrink:0}
+.site-card-top{min-height:35px;justify-content:flex-start;gap:16px;padding:0 13px;background:#f8faf8;border-bottom:1px solid #dde7e2}
+.site-card-top>span{font-family:'DM Sans',Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:.02em;color:#69857d}
+.site-card-dots{display:flex;gap:6px;align-items:center}
+.site-card-dots i{display:block;height:7px;width:7px;border-radius:50%;background:#b9d7d0}
+.site-card-image{min-height:0}
+.site-card-copy{padding:13px 17px}
+.site-card-copy strong{font-size:clamp(14px,1.9vw,22px)}
+@media(max-width:540px){.site-card-browser{width:82%;height:78%}}
