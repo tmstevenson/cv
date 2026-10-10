@@ -103,3 +103,6 @@
 /* Three commercial targets display evenly */
 .portal-goals-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:700px){.portal-goals-grid{grid-template-columns:1fr}}
+
+/* Combine sector research and proposed KPIs in one commercial rationale */
+.portal-goals-integrated{padding-top:30px;margin-top:32px;border-top:1px solid #dce8df}.portal-goals-integrated>p{margin:10px 0 20px;line-height:1.7}.portal-goals-integrated .portal-goals-grid{margin-top:20px}.portal-goals-integrated .portal-goals-note{font-size:12px;margin:14px 0 0;color:#687b73}.portal-research>.portal-research-note{margin-top:20px}
