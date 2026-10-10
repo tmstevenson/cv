@@ -469,3 +469,15 @@ h1 em{font-style:normal;color:var(--teal)}
 /* Balance vertical space around How I Work */
 .about-profile-page .about-work-wrap{padding-bottom:72px}
 @media(max-width:700px){.about-profile-page .about-work-wrap{padding-bottom:54px}}
+
+/* Taller About hero, with the existing portrait filling the full section height */
+@media(min-width:901px){
+  .about-profile-page .about-hero-band .about-hero{min-height:590px}
+  .about-profile-page .about-hero-band .about-portrait{height:590px}
+  .about-profile-page .about-hero-band .about-portrait img{height:100%;min-height:0;aspect-ratio:auto;object-fit:cover;object-position:left bottom}
+}
+@media(min-width:651px) and (max-width:900px){
+  .about-profile-page .about-hero-band .about-hero{min-height:490px}
+  .about-profile-page .about-hero-band .about-portrait{height:490px}
+  .about-profile-page .about-hero-band .about-portrait img{height:100%;min-height:0;aspect-ratio:auto;object-fit:cover;object-position:left bottom}
+}
