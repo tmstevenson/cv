@@ -415,3 +415,9 @@ h1 em{font-style:normal;color:var(--teal)}
 /* Extra headroom for the updated WebP portrait while preserving the left-bleed arch */
 .about-profile-page .about-portrait img{object-position:34% 26%}
 @media(max-width:650px){.about-profile-page .about-portrait img{object-position:34% 25%}}
+
+/* Show the complete updated portrait without forcing a crop */
+.about-profile-page .about-portrait{border-radius:0 240px 240px 0}
+.about-profile-page .about-portrait img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;display:block}
+@media(max-width:950px){.about-profile-page .about-portrait img{height:auto}}
+@media(max-width:650px){.about-profile-page .about-portrait img{height:auto;object-position:center}}
