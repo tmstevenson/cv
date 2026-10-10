@@ -450,3 +450,7 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-profile-page .about-hero-band .about-portrait img{object-position:left bottom}
 @media(max-width:900px){.about-profile-page .about-hero-band .about-hero{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);column-gap:7%}}
 @media(max-width:650px){.about-profile-page .about-hero-band .about-hero{grid-template-columns:1fr}.about-profile-page .about-hero-band .about-portrait{width:calc(88% + 40px)}.about-profile-page .about-hero-band .about-portrait img{object-position:left bottom}}
+
+/* Clear separation between How I Work and Experience and Credentials */
+.about-profile-page .about-work-wrap{padding-bottom:125px}
+@media(max-width:700px){.about-profile-page .about-work-wrap{padding-bottom:85px}}
