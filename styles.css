@@ -84,3 +84,16 @@
 /* Display the approved catalogue concept image without cropping */
 .portal-demo-small.portal-catalogue-image{height:auto;aspect-ratio:1672/941;background:#fff;overflow:hidden}
 .portal-catalogue-image img{display:block;width:100%;height:100%;object-fit:contain}
+
+/* Commercial rationale for enterprise portal, clearly differentiated from project results */
+.portal-research{padding:68px 0 55px;border-bottom:1px solid #dce8df}
+.portal-research-intro{display:grid;grid-template-columns:1fr 1.15fr;gap:12%;align-items:end;margin-bottom:30px}
+.portal-research-intro h2{margin:12px 0 0;font-size:clamp(29px,3.5vw,42px);line-height:1.13}
+.portal-research-intro p{margin:0;font-size:16px;line-height:1.7}
+.portal-research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.portal-research-grid>div{border:1px solid #d9e5df;border-radius:12px;background:#f7faf8;padding:22px 21px 20px;display:flex;flex-direction:column;align-items:flex-start;min-height:214px}
+.portal-research-grid strong{font-family:Manrope,Arial,sans-serif;font-size:clamp(37px,4.5vw,56px);line-height:1;color:#193f34;letter-spacing:-.055em;margin-bottom:14px}
+.portal-research-grid span{font-size:14px;line-height:1.5;color:#43574e;flex:1}
+.portal-research-grid a{font-size:12px;font-weight:700;color:#a94829;text-decoration:underline;text-underline-offset:3px;margin-top:18px}
+.portal-research-note{font-size:12px;color:#6a7b72;line-height:1.6;margin:17px 0 0}
+@media(max-width:700px){.portal-research{padding:42px 0 35px}.portal-research-intro{grid-template-columns:1fr;gap:17px}.portal-research-grid{grid-template-columns:1fr}.portal-research-grid>div{min-height:0}.portal-research-grid span{max-width:450px}}
