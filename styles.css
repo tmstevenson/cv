@@ -399,3 +399,8 @@ h1 em{font-style:normal;color:var(--teal)}
 @media(max-width:700px){#about .about-tabs-full{margin-top:34px}}
 
 #about .about-grid>.about-tabs-full{grid-column:1 / -1;min-width:0}
+
+/* Fine-tune spacing around homepage capability filing tabs */
+#about .about-tabs-full{margin-top:16px}
+#about{padding-bottom:135px}
+@media(max-width:700px){#about .about-tabs-full{margin-top:12px}#about{padding-bottom:85px}}
