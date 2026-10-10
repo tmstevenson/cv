@@ -113,3 +113,12 @@
 .portal-research .portal-research-grid strong,.portal-research .portal-goals-grid strong{font-family:Manrope,Arial,sans-serif;font-size:clamp(37px,4.5vw,56px);line-height:1;color:#193f34;letter-spacing:-.055em;margin:0 0 14px;white-space:nowrap}
 .portal-research .portal-research-grid span,.portal-research .portal-goals-grid span{font-size:14px;line-height:1.5;color:#43574e;flex:1}
 @media(max-width:700px){.portal-research .portal-research-grid,.portal-research .portal-goals-grid{grid-template-columns:1fr}.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{min-height:0}}
+
+/* Portal research and goals: match dark-green metrics treatment elsewhere in the portfolio */
+.portal-research .portal-research-grid,.portal-research .portal-goals-grid{background:var(--deep);border-radius:10px;overflow:hidden;gap:0}
+.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{background:transparent;border:0;border-radius:0;min-height:214px;padding:27px 24px 25px;border-right:1px solid rgba(255,255,255,.19)}
+.portal-research .portal-research-grid>div:last-child,.portal-research .portal-goals-grid>div:last-child{border-right:0}
+.portal-research .portal-research-grid strong,.portal-research .portal-goals-grid strong{color:#fff}
+.portal-research .portal-research-grid span,.portal-research .portal-goals-grid span{color:#cee0d8}
+.portal-research .portal-research-grid a{color:#d8eae1;text-decoration-color:#a7c9bb}
+@media(max-width:700px){.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{min-height:0;border-right:0;border-bottom:1px solid rgba(255,255,255,.19)}.portal-research .portal-research-grid>div:last-child,.portal-research .portal-goals-grid>div:last-child{border-bottom:0}}
