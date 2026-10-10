@@ -384,3 +384,9 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-profile-page .about-hero-copy{min-width:0}
 @media(max-width:800px){.about-profile-page .about-hero{grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:7%}.about-profile-page .about-portrait img{height:330px}}
 @media(max-width:650px){.about-profile-page .about-hero{grid-template-columns:1fr;gap:28px}.about-profile-page .about-hero-copy{order:1}.about-profile-page .about-portrait{order:2;width:calc(100% + (100vw - min(1180px, 100vw - 80px))/2);max-width:none;border-radius:0 22px 22px 0}.about-profile-page .about-portrait img{height:270px;object-position:35% center}}
+
+/* Single-row filing tabs: overflow horizontally rather than stacking */
+.capability-tabs .cap-tablist{display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;gap:0;padding:0;border-bottom:2px solid var(--deep);scrollbar-width:thin;scrollbar-color:#aac9bd transparent;-webkit-overflow-scrolling:touch}
+.capability-tabs .cap-tab{flex:0 0 auto;white-space:nowrap;margin-right:4px;scroll-snap-align:start}
+.capability-tabs .cap-panels{clear:both}
+@media(max-width:700px){.capability-tabs .cap-tablist{flex-wrap:nowrap;overflow-x:auto}.capability-tabs .cap-tab{flex:0 0 auto}}
