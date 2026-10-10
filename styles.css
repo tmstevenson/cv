@@ -604,3 +604,10 @@ h1 em{font-style:normal;color:var(--teal)}
 .webinar-title em{font-style:normal;color:#f25421}
 .webinar-subtitle{max-width:250px;font-size:11px;font-weight:750;line-height:1.45}
 .webinar-preview-footer{font-size:9px;color:#a2b0c1;letter-spacing:.08em;margin-top:auto}
+
+/* Three curated samples: clear multi-link evidence and legible campaign thumbnail */
+.practice-link-stack{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-top:18px}
+.practice-link-stack .text-link{margin:0;font-size:13px;line-height:1.45}
+.practice-campaign-thumb{background:#f0f0ed;display:flex;align-items:flex-start;justify-content:center}
+.practice-campaign-thumb img{height:100%;width:auto;max-width:100%;object-fit:contain;object-position:center top}
+@media(min-width:961px){.practice-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
