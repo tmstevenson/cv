@@ -462,3 +462,6 @@ h1 em{font-style:normal;color:var(--teal)}
     column-gap:21%;
   }
 }
+
+/* Keep the back link close to the About hero */
+.about-profile-page .about-back-wrap{padding-top:22px;padding-bottom:18px}
