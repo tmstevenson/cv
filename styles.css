@@ -376,3 +376,11 @@ h1 em{font-style:normal;color:var(--teal)}
 .cap-panels{border:1px solid #c6d9d1;border-top:0;background:#fff;border-radius:0 0 12px 12px;padding:30px 32px 34px}
 .cap-panel h3{margin-top:0}
 @media(max-width:700px){.cap-tablist{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;gap:0;padding:0;scroll-snap-type:x proximity}.cap-tab{flex:none;margin-right:3px;scroll-snap-align:start}.cap-panels{padding:24px 22px 28px}}
+
+/* About hero: full-bleed left portrait, aligned to the same two-column grid as How I Work */
+.about-profile-page .about-hero{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:11%;align-items:center}
+.about-profile-page .about-portrait{width:calc(100% + (100vw - min(1180px, 100vw - 80px))/2);max-width:none;margin:0 0 0 calc((100vw - min(1180px, 100vw - 80px))/-2);justify-self:stretch;border-radius:0 24px 24px 0;overflow:hidden}
+.about-profile-page .about-portrait img{display:block;width:100%;height:385px;aspect-ratio:auto;object-fit:cover;object-position:34% center}
+.about-profile-page .about-hero-copy{min-width:0}
+@media(max-width:800px){.about-profile-page .about-hero{grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:7%}.about-profile-page .about-portrait img{height:330px}}
+@media(max-width:650px){.about-profile-page .about-hero{grid-template-columns:1fr;gap:28px}.about-profile-page .about-hero-copy{order:1}.about-profile-page .about-portrait{order:2;width:calc(100% + (100vw - min(1180px, 100vw - 80px))/2);max-width:none;border-radius:0 22px 22px 0}.about-profile-page .about-portrait img{height:270px;object-position:35% center}}
