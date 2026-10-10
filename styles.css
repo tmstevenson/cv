@@ -543,3 +543,14 @@ h1 em{font-style:normal;color:var(--teal)}
 
 /* Tighter gap between back link and dark green About hero */
 .about-profile-page .about-back-wrap{padding-bottom:6px}
+
+/* Selected work cards: preserve image proportions and visual height on tablets */
+@media(min-width:701px) and (max-width:1100px){
+  #work .work-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+  #work .work-card .visual{height:auto;min-height:310px;aspect-ratio:4/3}
+  #work .work-card .site-card-visual{background-image:none}
+  #work .work-card .site-card-visual>.sitemax-real-card-image{
+    width:100%;height:100%;object-fit:contain;object-position:center;
+  }
+  #work .work-card .portal-card-visual img{width:100%;height:100%;object-fit:contain;object-position:center}
+}
