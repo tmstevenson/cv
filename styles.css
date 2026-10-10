@@ -298,3 +298,7 @@
 .about-report-links p{margin:0}
 @media(max-width:800px){.about-profile-intro{grid-template-columns:1fr;gap:22px}.about-trait-grid{grid-template-columns:1fr}.about-profile-page>.wrap:first-child{padding-top:52px;padding-bottom:60px}.about-profile-intro{margin-top:52px}.about-traits,.about-reports{padding:60px 0}.about-profile-more{padding:0 0 65px}.about-profile-more .about-profile-intro{margin-top:60px}}
 @media(max-width:540px){.about-trait-grid>div{padding:26px 23px}.about-traits,.about-reports{padding:48px 0}.about-profile-page>.wrap:first-child{padding-top:40px;padding-bottom:52px}.about-profile-intro{margin-top:43px}.about-profile-more .about-profile-intro{margin-top:48px}}
+
+/* Consistent two-tone H1 treatment, based on the homepage headline */
+h1 em{font-style:normal;color:var(--teal)}
+.interior h1 em,.contact-page h1 em,.about-profile-page h1 em{font-style:normal;color:var(--teal)}
