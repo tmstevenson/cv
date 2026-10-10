@@ -258,3 +258,43 @@
 /* Keep LinkedIn glyph white over its dark-green hover circle in the footer */
 .footer a.linkedin-link:hover,.footer a.linkedin-link:focus-visible{background:var(--deep);border-color:var(--deep);color:#fff}
 .footer a.linkedin-link:hover svg,.footer a.linkedin-link:focus-visible svg{fill:currentColor}
+
+/* ABOUT PAGE — consistent editorial rhythm and section hierarchy */
+.about-profile-page{padding:0!important}
+.about-profile-page>.wrap:first-child{padding-top:74px;padding-bottom:78px}
+.about-profile-page>.wrap:first-child .back{margin-bottom:36px}
+.about-profile-page h1{font-size:clamp(46px,5.9vw,76px);letter-spacing:-.055em;line-height:1.08;margin:16px 0 22px;max-width:970px}
+.about-profile-page h1 em{font-style:normal;color:var(--teal)}
+.about-profile-page .lead{font-size:clamp(18px,2vw,22px);max-width:720px;line-height:1.6;color:#526761}
+.about-profile-intro{display:grid;grid-template-columns:.83fr 1.17fr;gap:11%;align-items:start;margin-top:72px}
+.about-profile-intro h2{font-size:clamp(30px,3.2vw,42px);line-height:1.18;letter-spacing:-.045em;margin:14px 0 0}
+.about-profile-intro p{font-size:17px;line-height:1.75;margin:0 0 19px;color:#526761}
+.about-profile-intro .text-link{display:inline-block;margin-top:8px;font-weight:700}
+.about-traits{background:#e8f0eb;padding:80px 0 86px}
+.about-traits h2,.about-reports h2{font-size:clamp(32px,3.6vw,45px);line-height:1.15;letter-spacing:-.045em;margin:14px 0 20px}
+.about-traits-intro{max-width:750px;color:#526761;font-size:17px;line-height:1.7;margin:0 0 38px}
+.about-trait-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.about-trait-grid>div{background:rgba(255,255,255,.75);border:1px solid #d6e3da;border-radius:16px;padding:35px 32px 31px}
+.about-trait-type{display:block;color:var(--teal);text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.15em;margin-bottom:16px}
+.about-trait-grid h3{font-size:clamp(23px,2.4vw,29px);letter-spacing:-.035em;line-height:1.25;margin:0 0 18px}
+.about-trait-grid p{color:#526761;font-size:15px;line-height:1.75;margin:0 0 18px}
+.about-trait-grid ul{margin:0;padding-left:20px;color:var(--ink);font-size:14px;line-height:1.75}
+.about-trait-grid li{margin-bottom:8px}
+.about-profile-more{background:#fff;padding:6px 0 85px}
+.about-profile-more .about-profile-intro{margin-top:75px}
+.about-reports{background:var(--deep);color:#fff;padding:76px 0 85px}
+.about-reports .eyebrow{color:#b9d7d0}
+.about-reports h2{color:#fff}
+.about-reports>.wrap>p{color:#d1e4dc;font-size:17px;margin:0 0 26px}
+.about-reports-form{max-width:790px}
+.about-reports-form .contact-field{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.about-reports-form label{font-size:13px;font-weight:700;color:#e5f1ec}
+.about-reports-form input{font:inherit;width:100%;background:#fff;color:var(--ink);border:1px solid #c5d8cf;border-radius:10px;padding:14px 16px;min-height:50px}
+.about-reports-form input:focus{outline:3px solid #92c9b7;outline-offset:2px}
+.about-reports-form button{border:0;cursor:pointer;background:#fff;color:var(--deep)}
+.about-reports-form button:hover{background:#dcebe4;color:var(--deep)}
+.about-reports .about-reports-note{margin-top:24px;font-size:12px;line-height:1.6;color:#b9d7d0}
+.about-report-links:not([hidden]){background:#fff;color:var(--ink);border-radius:12px;padding:20px 24px;margin-top:24px;max-width:790px}
+.about-report-links p{margin:0}
+@media(max-width:800px){.about-profile-intro{grid-template-columns:1fr;gap:22px}.about-trait-grid{grid-template-columns:1fr}.about-profile-page>.wrap:first-child{padding-top:52px;padding-bottom:60px}.about-profile-intro{margin-top:52px}.about-traits,.about-reports{padding:60px 0}.about-profile-more{padding:0 0 65px}.about-profile-more .about-profile-intro{margin-top:60px}}
+@media(max-width:540px){.about-trait-grid>div{padding:26px 23px}.about-traits,.about-reports{padding:48px 0}.about-profile-page>.wrap:first-child{padding-top:40px;padding-bottom:52px}.about-profile-intro{margin-top:43px}.about-profile-more .about-profile-intro{margin-top:48px}}
