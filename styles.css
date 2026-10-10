@@ -106,3 +106,10 @@
 
 /* Combine sector research and proposed KPIs in one commercial rationale */
 .portal-goals-integrated{padding-top:30px;margin-top:32px;border-top:1px solid #dce8df}.portal-goals-integrated>p{margin:10px 0 20px;line-height:1.7}.portal-goals-integrated .portal-goals-grid{margin-top:20px}.portal-goals-integrated .portal-goals-note{font-size:12px;margin:14px 0 0;color:#687b73}.portal-research>.portal-research-note{margin-top:20px}
+
+/* Present research statistics and proposed goal statistics with matching visual weight */
+.portal-research .portal-research-grid,.portal-research .portal-goals-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{box-sizing:border-box;min-height:214px;padding:22px 21px 20px;border:1px solid #d9e5df;border-radius:12px;background:#f7faf8;display:flex;flex-direction:column;align-items:flex-start;gap:0}
+.portal-research .portal-research-grid strong,.portal-research .portal-goals-grid strong{font-family:Manrope,Arial,sans-serif;font-size:clamp(37px,4.5vw,56px);line-height:1;color:#193f34;letter-spacing:-.055em;margin:0 0 14px;white-space:nowrap}
+.portal-research .portal-research-grid span,.portal-research .portal-goals-grid span{font-size:14px;line-height:1.5;color:#43574e;flex:1}
+@media(max-width:700px){.portal-research .portal-research-grid,.portal-research .portal-goals-grid{grid-template-columns:1fr}.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{min-height:0}}
