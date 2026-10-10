@@ -444,3 +444,9 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-profile-page .about-hero-band+.wrap .about-profile-intro{margin-top:72px}
 @media(max-width:900px){.about-profile-page .about-hero-band .about-hero{column-gap:7%}.about-profile-page .about-hero-band .about-portrait img{min-height:300px;aspect-ratio:1.35/1}}
 @media(max-width:650px){.about-profile-page .about-hero-band .about-hero{grid-template-columns:1fr;gap:0}.about-profile-page .about-hero-band .about-hero-copy{order:1;padding:36px 0 28px}.about-profile-page .about-hero-band .about-portrait{order:2;align-self:auto;margin-left:-40px;width:calc(100% + 40px);border-radius:0 160px 160px 0}.about-profile-page .about-hero-band .about-portrait img{height:auto;min-height:0;aspect-ratio:1.42/1;object-position:center bottom}.about-profile-page .about-hero-band+.wrap .about-profile-intro{margin-top:54px}}
+
+/* Narrow left-bleed portrait arch, with image anchored at left so cropping is on the right */
+.about-profile-page .about-hero-band .about-hero{grid-template-columns:minmax(0,.68fr) minmax(0,1.32fr);column-gap:11%}
+.about-profile-page .about-hero-band .about-portrait img{object-position:left bottom}
+@media(max-width:900px){.about-profile-page .about-hero-band .about-hero{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);column-gap:7%}}
+@media(max-width:650px){.about-profile-page .about-hero-band .about-hero{grid-template-columns:1fr}.about-profile-page .about-hero-band .about-portrait{width:calc(88% + 40px)}.about-profile-page .about-hero-band .about-portrait img{object-position:left bottom}}
