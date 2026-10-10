@@ -223,3 +223,18 @@
 .portal-page>.wrap{padding-bottom:0!important}
 .portal-page .portal-contact-band{margin-bottom:0!important}
 .portal-page .portal-contact-band::after{content:"";position:absolute;top:100%;left:0;width:100%;height:1px;background:#e8f0eb;pointer-events:none}
+
+/* Simple accessible homepage contact form */
+.portfolio-contact-form{margin-top:34px;max-width:790px}
+.contact-input-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.portfolio-contact-form .contact-field{display:flex;flex-direction:column;gap:7px;margin-bottom:18px}
+.portfolio-contact-form label{font-size:13px;font-weight:700;color:var(--ink)}
+.portfolio-contact-form input:not(.contact-honeypot),.portfolio-contact-form textarea{font:inherit;width:100%;box-sizing:border-box;background:#fff;border:1px solid #cadcd3;border-radius:10px;padding:13px 15px;color:var(--ink);outline:none;transition:border-color .15s,box-shadow .15s}
+.portfolio-contact-form textarea{min-height:145px;resize:vertical}
+.portfolio-contact-form input:focus,.portfolio-contact-form textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(52,109,102,.16)}
+.portfolio-contact-form .contact-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.contact-form-footer{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:6px}
+.contact-form-footer button{cursor:pointer;border:0}
+.contact-form-footer span{color:var(--muted);font-size:14px}
+.contact-form-footer span a{text-decoration:underline;text-underline-offset:3px;color:var(--deep);font-weight:700}
+@media(max-width:620px){.contact-input-row{grid-template-columns:1fr;gap:0}.portfolio-contact-form{margin-top:26px}}
