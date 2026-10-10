@@ -359,3 +359,10 @@ h1 em{font-style:normal;color:var(--teal)}
 .cap-panel p{font-size:15px;line-height:1.75;color:#526761;margin:0 0 17px;max-width:740px}
 .cap-panel .text-link{display:inline-block;margin:0}
 @media(max-width:700px){.cap-tablist{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:15px}.cap-tab{flex:none;scroll-snap-align:start}.cap-panels{padding-top:20px}}
+
+/* Landscape portrait: extend the side-arch towards the copy without shifting the text column */
+.about-profile-page .about-hero{grid-template-columns:minmax(290px,420px) minmax(0,1fr);gap:clamp(28px,4vw,58px)}
+.about-profile-page .about-portrait{max-width:420px;border-radius:0 210px 210px 0}
+.about-profile-page .about-portrait img{height:345px;object-position:38% center}
+@media(max-width:900px){.about-profile-page .about-hero{grid-template-columns:minmax(230px,34%) minmax(0,1fr);gap:24px}.about-profile-page .about-portrait img{height:310px}}
+@media(max-width:650px){.about-profile-page .about-hero{grid-template-columns:1fr;gap:25px}.about-profile-page .about-portrait{max-width:330px;border-radius:0 165px 165px 0}.about-profile-page .about-portrait img{height:260px}}
