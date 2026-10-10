@@ -596,3 +596,11 @@ h1 em{font-style:normal;color:var(--teal)}
 .practice-campaign-art .campaign-offer{font-size:12px;font-weight:650;max-width:240px;line-height:1.45}
 .practice-campaign-art .campaign-cta{font-size:10px;letter-spacing:.08em;background:#f25421;border-radius:50px;padding:7px 12px;font-weight:800}
 .practice-campaign-note{color:var(--muted)}
+
+/* Webinar EDM work sample: restrained campaign preview */
+.webinar-preview{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:22px;background:#050a20;color:white;gap:14px}
+.webinar-kicker{color:#ff6134;font-size:10px;font-weight:800;letter-spacing:.1em}
+.webinar-title{font-family:Manrope,Arial,sans-serif;font-size:clamp(25px,2.8vw,39px);font-weight:800;letter-spacing:-.045em;line-height:1.08}
+.webinar-title em{font-style:normal;color:#f25421}
+.webinar-subtitle{max-width:250px;font-size:11px;font-weight:750;line-height:1.45}
+.webinar-preview-footer{font-size:9px;color:#a2b0c1;letter-spacing:.08em;margin-top:auto}
