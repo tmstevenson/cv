@@ -588,3 +588,11 @@ h1 em{font-style:normal;color:var(--teal)}
 .practice-home-link{text-align:right;padding:0 0 50px}
 @media(max-width:960px){.practice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.practice-grid{grid-template-columns:1fr}.practice-gallery{margin:60px 0}.practice-home-link{text-align:left;padding-bottom:35px}}
+
+/* Summer Setup campaign card: graphic preview until approved EDM image is uploaded */
+.practice-campaign-art{padding:20px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:10px;color:#fff;background:linear-gradient(155deg,#f25421 0%,#f25421 38%,#1aa4cf 39%,#56c6e6 100%);text-align:left}
+.practice-campaign-art .campaign-ribbon{font-size:10px;font-weight:800;letter-spacing:.14em;color:#fff}
+.practice-campaign-art .campaign-display{font-family:Manrope,Arial,sans-serif;font-size:clamp(25px,2.8vw,39px);font-weight:800;line-height:1.08;letter-spacing:-.04em}
+.practice-campaign-art .campaign-offer{font-size:12px;font-weight:650;max-width:240px;line-height:1.45}
+.practice-campaign-art .campaign-cta{font-size:10px;letter-spacing:.08em;background:#f25421;border-radius:50px;padding:7px 12px;font-weight:800}
+.practice-campaign-note{color:var(--muted)}
