@@ -540,3 +540,6 @@ h1 em{font-style:normal;color:var(--teal)}
     border-radius:0 50% 50% 0 / 0 50% 50% 0;
   }
 }
+
+/* Tighter gap between back link and dark green About hero */
+.about-profile-page .about-back-wrap{padding-bottom:6px}
