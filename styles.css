@@ -514,3 +514,29 @@ h1 em{font-style:normal;color:var(--teal)}
     font-size:clamp(17px,2.2vw,22px);line-height:1.6;
   }
 }
+
+/* Widen the right-hand half-oval itself, keeping a full smooth curve */
+@media(min-width:1101px){
+  .about-profile-page .about-hero-band .about-portrait{
+    width:calc(100% + max(40px,(100vw - 1180px)/2) + 90px);
+    border-radius:0 50% 50% 0 / 0 50% 50% 0;
+  }
+}
+@media(min-width:651px) and (max-width:1100px){
+  .about-profile-page .about-hero-band .about-hero{
+    grid-template-columns:minmax(0,49%) minmax(0,51%);
+  }
+  .about-profile-page .about-hero-band .about-portrait{
+    width:calc(100% + max(40px,(100vw - 1180px)/2));
+    border-radius:0 50% 50% 0 / 0 50% 50% 0;
+  }
+  .about-profile-page .about-hero-band .about-hero-copy{
+    padding-left:clamp(28px,3vw,46px);
+  }
+}
+@media(max-width:650px){
+  .about-profile-page .about-hero-band .about-portrait{
+    width:calc(100% + 40px);
+    border-radius:0 50% 50% 0 / 0 50% 50% 0;
+  }
+}
