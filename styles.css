@@ -562,3 +562,29 @@ h1 em{font-style:normal;color:var(--teal)}
 .product-guides-feature img{display:block;width:100%;height:auto}
 .product-guides-feature figcaption{padding:12px 20px 16px;color:var(--muted);font-size:13px;background:var(--white)}
 @media(min-width:701px) and (max-width:1100px){#work .product-guides-visual img{object-fit:contain}}
+
+/* Curated practical work samples in existing case study */
+.practice-gallery{margin:82px 0 70px;scroll-margin-top:110px}
+.practice-gallery-intro{max-width:680px;margin-bottom:30px}
+.practice-gallery-intro h2{margin:10px 0 12px;font-size:clamp(30px,3.4vw,43px);line-height:1.2}
+.practice-gallery-intro p{color:var(--muted);margin:0}
+.practice-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}
+.practice-card{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--white);box-shadow:0 10px 30px rgba(24,54,51,.04)}
+.practice-card summary{cursor:pointer;list-style:none;display:block}
+.practice-card summary::-webkit-details-marker{display:none}
+.practice-card summary:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}
+.practice-image{display:block;aspect-ratio:4/3;overflow:hidden;background:#eaece8}
+.practice-image img{display:block;width:100%;height:100%;object-fit:contain}
+.practice-card-heading{display:flex;flex-direction:column;padding:20px;gap:10px}
+.practice-category{font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--teal);font-weight:700}
+.practice-card-heading strong{font-family:Manrope,Arial,sans-serif;font-size:19px;line-height:1.35;color:var(--deep)}
+.practice-toggle{display:flex;justify-content:space-between;color:var(--teal);font-size:13px;font-weight:700;padding-top:5px}
+.practice-toggle span{font-size:19px;line-height:1}
+.practice-card[open] .practice-toggle span{transform:rotate(45deg)}
+.practice-description{padding:0 20px 22px;border-top:1px solid var(--line)}
+.practice-description p{font-size:14px;line-height:1.65;margin:14px 0}
+.practice-description .text-link{display:inline-block;white-space:normal;margin-top:6px}
+.practice-gallery-note{font-size:13px;color:var(--muted);margin-top:22px}
+.practice-home-link{text-align:right;padding:0 0 50px}
+@media(max-width:960px){.practice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.practice-grid{grid-template-columns:1fr}.practice-gallery{margin:60px 0}.practice-home-link{text-align:left;padding-bottom:35px}}
