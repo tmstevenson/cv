@@ -332,3 +332,16 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-career-grid span{color:#526761;font-size:15px;line-height:1.7}
 .about-career-proof .text-link{font-weight:700}
 @media(max-width:750px){.about-career-proof{padding:55px 0}.about-career-grid{grid-template-columns:1fr;gap:14px}.about-career-grid>div{padding-top:17px}}
+
+/* Compact side-facing arch portrait with its flat edge on the left */
+.about-profile-page .about-hero{grid-template-columns:minmax(235px,320px) minmax(0,1fr);gap:clamp(36px,5vw,85px);align-items:center}
+.about-profile-page .about-portrait{justify-self:start;max-width:320px;border-radius:0 210px 210px 0}
+.about-profile-page .about-portrait img{height:390px;object-position:center 34%}
+.about-profile-page .about-hero-copy{min-width:0}
+.about-profile-page .about-hero-copy h1{font-size:clamp(39px,4.7vw,68px)}
+@media(max-width:800px){.about-profile-page .about-hero{grid-template-columns:245px minmax(0,1fr);gap:25px}.about-profile-page .about-portrait img{height:320px}}
+@media(max-width:650px){.about-profile-page .about-hero{grid-template-columns:1fr;gap:28px}.about-profile-page .about-hero-copy{order:1}.about-profile-page .about-portrait{order:2;max-width:245px;border-radius:0 165px 165px 0}.about-profile-page .about-portrait img{height:310px}}
+/* Tighten only the handoff from home hero into Selected Work */
+.hero{padding-bottom:48px}
+.hero + .section#work{padding-top:56px}
+@media(max-width:700px){.hero{padding-bottom:38px}.hero + .section#work{padding-top:43px}}
