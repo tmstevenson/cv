@@ -199,3 +199,12 @@
 .portal-contact-band{position:relative;left:50%;width:100vw;margin-left:-50vw;background:#e8f0eb;padding:48px max(40px,calc((100vw - 1180px)/2)) 60px}
 .portal-contact-band .muted-box{background:#e8f0eb;border:1px solid #c7dcd1;border-radius:15px;margin:0;padding:30px}
 @media(max-width:700px){.portal-contact-band{padding:36px 24px 46px}}
+
+/* Portal footer contact band: continuous mint background and dark-green contact panel */
+.interior.portal-page{padding-bottom:0}
+.portal-page .portal-contact-band{background:#e8f0eb;padding-bottom:70px}
+.portal-page .portal-contact-band .muted-box{background:var(--deep);border-color:var(--deep);color:#fff}
+.portal-page .portal-contact-band .muted-box h3{color:#fff}
+.portal-page .portal-contact-band .muted-box p{color:#d1e4dc}
+.portal-page .portal-contact-band .muted-box .text-link{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:700px){.portal-page .portal-contact-band{padding-bottom:48px}}
