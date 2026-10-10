@@ -312,3 +312,12 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-trait-grid>div{display:flex;flex-direction:column;align-items:flex-start}
 .about-trait-grid ul{margin-bottom:24px}
 .about-trait-grid .personality-report-button{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:13px;white-space:normal}
+
+/* Compact arch portrait beside About hero copy */
+.about-profile-page .about-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(245px,315px);gap:clamp(28px,5vw,80px);align-items:center}
+.about-profile-page .about-hero-copy{min-width:0}
+.about-profile-page .about-hero-copy h1{font-size:clamp(42px,5vw,69px);max-width:none}
+.about-profile-page .about-portrait{width:100%;max-width:315px;margin:0;justify-self:end;overflow:hidden;border-radius:180px 180px 20px 20px;background:#e8f0eb}
+.about-profile-page .about-portrait img{display:block;width:100%;height:390px;aspect-ratio:auto;object-fit:cover;object-position:center 32%}
+@media(max-width:800px){.about-profile-page .about-hero{grid-template-columns:minmax(0,1fr) 245px;gap:24px}.about-profile-page .about-portrait img{height:320px}}
+@media(max-width:650px){.about-profile-page .about-hero{grid-template-columns:1fr;gap:26px}.about-profile-page .about-portrait{justify-self:start;max-width:245px;border-radius:130px 130px 16px 16px}.about-profile-page .about-portrait img{height:310px}}
