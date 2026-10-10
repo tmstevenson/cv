@@ -208,3 +208,12 @@
 .portal-page .portal-contact-band .muted-box p{color:#d1e4dc}
 .portal-page .portal-contact-band .muted-box .text-link{color:#fff;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:700px){.portal-page .portal-contact-band{padding-bottom:48px}}
+
+/* Minimal portfolio contact ending: no dark card or border */
+.portal-page .portal-contact-band{background:#e8f0eb;padding-top:74px;padding-bottom:80px}
+.portal-page .portal-contact-content{max-width:880px;padding:0;margin:0}
+.portal-page .portal-contact-content .eyebrow{color:var(--teal);margin-bottom:15px}
+.portal-page .portal-contact-content h2{font-family:Manrope,Arial,sans-serif;font-size:clamp(30px,3.5vw,43px);line-height:1.15;letter-spacing:-.04em;color:var(--ink);margin:0 0 16px}
+.portal-page .portal-contact-content p{font-size:17px;line-height:1.7;color:#526761;margin:0}
+.portal-page .portal-contact-content .text-link{font-weight:700;color:var(--deep);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:700px){.portal-page .portal-contact-band{padding-top:48px;padding-bottom:54px}}
