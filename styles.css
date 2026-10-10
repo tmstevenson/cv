@@ -486,3 +486,31 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-profile-page .about-hero-band .about-portrait{overflow:hidden;border-radius:0 9999px 9999px 0}
 .about-profile-page .about-hero-band .about-portrait img{border-radius:0}
 @media(max-width:650px){.about-profile-page .about-hero-band .about-portrait{border-radius:0 9999px 9999px 0}}
+
+/* Tablet: give copy room and keep the portrait subject inside the arch */
+@media(min-width:651px) and (max-width:1100px){
+  .about-profile-page .about-hero-band .about-hero{
+    grid-template-columns:minmax(0,42%) minmax(0,58%);
+    column-gap:0;
+    min-height:520px;
+  }
+  .about-profile-page .about-hero-band .about-portrait{
+    height:520px;
+    width:calc(100% + max(40px,(100vw - 1180px)/2));
+    margin-left:calc(-1 * max(40px,(100vw - 1180px)/2));
+    border-radius:0 9999px 9999px 0;
+  }
+  .about-profile-page .about-hero-band .about-portrait img{
+    height:100%;min-height:0;aspect-ratio:auto;
+    object-fit:cover;object-position:43% bottom;
+  }
+  .about-profile-page .about-hero-band .about-hero-copy{
+    min-width:0;padding:32px 0 32px clamp(30px,5vw,64px);
+  }
+  .about-profile-page .about-hero-band .about-hero-copy h1{
+    font-size:clamp(33px,4.6vw,52px);line-height:1.13;
+  }
+  .about-profile-page .about-hero-band .about-hero-copy .lead{
+    font-size:clamp(17px,2.2vw,22px);line-height:1.6;
+  }
+}
