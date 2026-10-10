@@ -254,3 +254,7 @@
 .linkedin-link:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
 .contact-social{display:flex;align-items:center;gap:13px;margin-top:28px;color:var(--muted);font-size:14px;font-weight:600}
 @media(max-width:700px){.footer .footer-right{justify-content:flex-start}}
+
+/* Keep LinkedIn glyph white over its dark-green hover circle in the footer */
+.footer a.linkedin-link:hover,.footer a.linkedin-link:focus-visible{background:var(--deep);border-color:var(--deep);color:#fff}
+.footer a.linkedin-link:hover svg,.footer a.linkedin-link:focus-visible svg{fill:currentColor}
