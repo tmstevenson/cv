@@ -217,3 +217,9 @@
 .portal-page .portal-contact-content p{font-size:17px;line-height:1.7;color:#526761;margin:0}
 .portal-page .portal-contact-content .text-link{font-weight:700;color:var(--deep);text-decoration:underline;text-underline-offset:4px}
 @media(max-width:700px){.portal-page .portal-contact-band{padding-top:48px;padding-bottom:54px}}
+
+/* Eliminate any remaining gap between the portal contact area and footer */
+.interior.portal-page{padding-bottom:0!important}
+.portal-page>.wrap{padding-bottom:0!important}
+.portal-page .portal-contact-band{margin-bottom:0!important}
+.portal-page .portal-contact-band::after{content:"";position:absolute;top:100%;left:0;width:100%;height:1px;background:#e8f0eb;pointer-events:none}
