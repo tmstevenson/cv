@@ -145,3 +145,8 @@
 .portal-research .portal-goals-note,.portal-research>.portal-research-note{color:#bcd4ca;font-size:12px;line-height:1.7}
 .portal-research>.portal-research-note{margin-top:28px}
 @media(max-width:700px){.portal-research{padding:44px 24px}.portal-research .portal-research-grid,.portal-research .portal-goals-grid{grid-template-columns:1fr;gap:27px}.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{border:0;padding:0}.portal-research .portal-goals-integrated{margin-top:35px;padding-top:34px}}
+
+/* Light green narrative section below the dark green portal metrics */
+.portal-research + .case-content{position:relative;left:50%;margin-left:-50vw;width:100vw;max-width:none;background:var(--mist);padding:70px max(40px,calc((100vw - 1180px)/2)) 65px}
+.portal-research + .case-content .outcome{background:#f9faf7}
+@media(max-width:700px){.portal-research + .case-content{padding:45px 24px}}
