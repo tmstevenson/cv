@@ -238,3 +238,11 @@
 .contact-form-footer span{color:var(--muted);font-size:14px}
 .contact-form-footer span a{text-decoration:underline;text-underline-offset:3px;color:var(--deep);font-weight:700}
 @media(max-width:620px){.contact-input-row{grid-template-columns:1fr;gap:0}.portfolio-contact-form{margin-top:26px}}
+
+/* Dedicated contact page */
+.contact-page{min-height:calc(100vh - 235px);padding:76px 0 105px;background:radial-gradient(circle at 94% 8%,#dcece4 0,transparent 44%),var(--cream)}
+.contact-page .back{display:inline-flex;margin-bottom:36px}
+.contact-page h1{font-size:clamp(45px,6vw,74px);line-height:1.1;margin:12px 0 18px;letter-spacing:-.055em}
+.contact-page> .wrap>p{font-size:18px;max-width:670px;color:#526761;margin:0}
+.contact-page .portfolio-contact-form{max-width:760px;margin-top:36px}
+@media(max-width:700px){.contact-page{padding:45px 0 75px}}
