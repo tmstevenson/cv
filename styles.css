@@ -307,3 +307,8 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-profile-page .about-portrait{max-width:710px;margin:42px 0 0;border-radius:16px;overflow:hidden;background:#e8f0eb}
 .about-profile-page .about-portrait img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 37%}
 @media(max-width:700px){.about-profile-page .about-portrait{margin-top:30px}.about-profile-page .about-portrait img{aspect-ratio:1/1;object-position:center 28%}}
+
+/* Direct PDF access within the personality profile cards */
+.about-trait-grid>div{display:flex;flex-direction:column;align-items:flex-start}
+.about-trait-grid ul{margin-bottom:24px}
+.about-trait-grid .personality-report-button{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:13px;white-space:normal}
