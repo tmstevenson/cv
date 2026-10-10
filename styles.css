@@ -122,3 +122,10 @@
 .portal-research .portal-research-grid span,.portal-research .portal-goals-grid span{color:#cee0d8}
 .portal-research .portal-research-grid a{color:#d8eae1;text-decoration-color:#a7c9bb}
 @media(max-width:700px){.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{min-height:0;border-right:0;border-bottom:1px solid rgba(255,255,255,.19)}.portal-research .portal-research-grid>div:last-child,.portal-research .portal-goals-grid>div:last-child{border-bottom:0}}
+
+/* Identical width, distribution and alignment for both rows of portal statistics */
+.portal-research .portal-research-grid,.portal-research .portal-goals-grid{display:grid;width:100%;grid-template-columns:repeat(3,minmax(0,1fr));justify-content:stretch;align-items:stretch;gap:0;margin-left:0;margin-right:0}
+.portal-research .portal-research-grid>div,.portal-research .portal-goals-grid>div{width:100%;height:100%;box-sizing:border-box;padding:27px 24px 25px;min-width:0}
+.portal-research .portal-research-grid strong,.portal-research .portal-goals-grid strong{display:block;flex:0 0 auto}
+.portal-research .portal-research-grid span,.portal-research .portal-goals-grid span{display:block;flex:1 1 auto}
+@media(max-width:700px){.portal-research .portal-research-grid,.portal-research .portal-goals-grid{grid-template-columns:1fr}}
