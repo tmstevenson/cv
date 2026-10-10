@@ -321,3 +321,14 @@ h1 em{font-style:normal;color:var(--teal)}
 .about-profile-page .about-portrait img{display:block;width:100%;height:390px;aspect-ratio:auto;object-fit:cover;object-position:center 32%}
 @media(max-width:800px){.about-profile-page .about-hero{grid-template-columns:minmax(0,1fr) 245px;gap:24px}.about-profile-page .about-portrait img{height:320px}}
 @media(max-width:650px){.about-profile-page .about-hero{grid-template-columns:1fr;gap:26px}.about-profile-page .about-portrait{justify-self:start;max-width:245px;border-radius:130px 130px 16px 16px}.about-profile-page .about-portrait img{height:310px}}
+
+/* CV-backed credentials on About page */
+.about-career-proof{background:#fff;padding:77px 0 83px;border-top:1px solid #e3e9e5}
+.about-career-proof h2{font-size:clamp(31px,3.5vw,45px);letter-spacing:-.045em;line-height:1.14;margin:12px 0 18px}
+.about-career-intro{max-width:810px;color:#526761;font-size:17px;line-height:1.75;margin:0 0 34px}
+.about-career-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-bottom:26px}
+.about-career-grid>div{border-top:2px solid var(--teal);padding:23px 10px 6px 0;display:flex;flex-direction:column;gap:13px}
+.about-career-grid strong{font-size:23px;line-height:1.25;letter-spacing:-.035em}
+.about-career-grid span{color:#526761;font-size:15px;line-height:1.7}
+.about-career-proof .text-link{font-weight:700}
+@media(max-width:750px){.about-career-proof{padding:55px 0}.about-career-grid{grid-template-columns:1fr;gap:14px}.about-career-grid>div{padding-top:17px}}
