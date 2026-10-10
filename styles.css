@@ -404,3 +404,10 @@ h1 em{font-style:normal;color:var(--teal)}
 #about .about-tabs-full{margin-top:16px}
 #about{padding-bottom:135px}
 @media(max-width:700px){#about .about-tabs-full{margin-top:12px}#about{padding-bottom:85px}}
+
+/* About portrait: true edge-to-edge left bleed with additional editorial breathing room */
+.about-profile-page .about-hero{grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);column-gap:clamp(64px,7.5vw,130px);align-items:center}
+.about-profile-page .about-portrait{box-sizing:border-box;max-width:none;width:calc(100% + max(40px, (100vw - 1180px) / 2));margin-left:calc(-1 * max(40px, (100vw - 1180px) / 2));margin-right:0;border-radius:0 240px 240px 0;overflow:hidden}
+.about-profile-page .about-portrait img{width:100%;height:385px;object-fit:cover;object-position:34% center}
+@media(max-width:950px){.about-profile-page .about-hero{column-gap:clamp(36px,5vw,65px)}.about-profile-page .about-portrait img{height:340px}}
+@media(max-width:650px){.about-profile-page .about-hero{grid-template-columns:1fr;row-gap:28px}.about-profile-page .about-portrait{width:calc(100% + 40px);margin-left:-40px;border-radius:0 180px 180px 0}.about-profile-page .about-portrait img{height:270px}}
