@@ -345,3 +345,17 @@ h1 em{font-style:normal;color:var(--teal)}
 .hero{padding-bottom:48px}
 .hero + .section#work{padding-top:56px}
 @media(max-width:700px){.hero{padding-bottom:38px}.hero + .section#work{padding-top:43px}}
+
+/* Homepage capabilities: accessible proof-led tabs instead of pill tags */
+.capability-tabs{margin-top:29px}
+.cap-tablist{display:flex;flex-wrap:wrap;gap:8px;border-bottom:1px solid #c9dbd3;padding-bottom:21px}
+.cap-tab{appearance:none;border:1px solid #c8dbd3;border-radius:99px;background:transparent;color:var(--deep);font:inherit;font-size:12px;font-weight:700;padding:11px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.cap-tab:hover{background:#e8f0eb}
+.cap-tab[aria-selected="true"]{background:var(--deep);color:#fff;border-color:var(--deep)}
+.cap-tab:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.cap-panels{padding-top:26px}
+.cap-panel[hidden]{display:none}
+.cap-panel h3{font-size:clamp(22px,2.5vw,29px);letter-spacing:-.035em;line-height:1.25;margin:0 0 11px;color:var(--ink)}
+.cap-panel p{font-size:15px;line-height:1.75;color:#526761;margin:0 0 17px;max-width:740px}
+.cap-panel .text-link{display:inline-block;margin:0}
+@media(max-width:700px){.cap-tablist{flex-wrap:nowrap;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:15px}.cap-tab{flex:none;scroll-snap-align:start}.cap-panels{padding-top:20px}}
