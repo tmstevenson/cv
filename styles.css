@@ -397,3 +397,5 @@ h1 em{font-style:normal;color:var(--teal)}
 #about .about-tabs-full .cap-tablist{justify-content:flex-start;width:100%;max-width:100%;overflow-x:auto}
 #about .about-tabs-full .cap-panels{min-height:210px}
 @media(max-width:700px){#about .about-tabs-full{margin-top:34px}}
+
+#about .about-grid>.about-tabs-full{grid-column:1 / -1;min-width:0}
