@@ -246,3 +246,11 @@
 .contact-page> .wrap>p{font-size:18px;max-width:670px;color:#526761;margin:0}
 .contact-page .portfolio-contact-form{max-width:760px;margin-top:36px}
 @media(max-width:700px){.contact-page{padding:45px 0 75px}}
+
+/* LinkedIn links in shared footer and dedicated contact page */
+.footer .footer-right{display:flex;align-items:center;justify-content:flex-end;gap:18px;flex-wrap:wrap}
+.linkedin-link{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid #c8dad0;border-radius:50%;color:var(--deep);background:rgba(255,255,255,.45);transition:background .15s,color .15s,border-color .15s}
+.linkedin-link:hover{background:var(--deep);color:white;border-color:var(--deep)}
+.linkedin-link:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.contact-social{display:flex;align-items:center;gap:13px;margin-top:28px;color:var(--muted);font-size:14px;font-weight:600}
+@media(max-width:700px){.footer .footer-right{justify-content:flex-start}}
