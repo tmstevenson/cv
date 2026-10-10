@@ -481,3 +481,8 @@ h1 em{font-style:normal;color:var(--teal)}
   .about-profile-page .about-hero-band .about-portrait{height:490px}
   .about-profile-page .about-hero-band .about-portrait img{height:100%;min-height:0;aspect-ratio:auto;object-fit:cover;object-position:left bottom}
 }
+
+/* Continuous half-oval edge: no vertical flat segment on the right */
+.about-profile-page .about-hero-band .about-portrait{overflow:hidden;border-radius:0 9999px 9999px 0}
+.about-profile-page .about-hero-band .about-portrait img{border-radius:0}
+@media(max-width:650px){.about-profile-page .about-hero-band .about-portrait{border-radius:0 9999px 9999px 0}}
