@@ -611,3 +611,8 @@ h1 em{font-style:normal;color:var(--teal)}
 .practice-campaign-thumb{background:#f0f0ed;display:flex;align-items:flex-start;justify-content:center}
 .practice-campaign-thumb img{height:100%;width:auto;max-width:100%;object-fit:contain;object-position:center top}
 @media(min-width:961px){.practice-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Selected work introduction directly under heading, two-thirds column */
+#work .work-section-header{display:block}
+#work .work-section-intro{max-width:66.6667%;margin:20px 0 0;color:var(--muted)}
+@media(max-width:650px){#work .work-section-intro{max-width:100%}}
